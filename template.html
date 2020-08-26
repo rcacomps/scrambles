@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RCA Official Scrambles</title>
+		<link rel="icon" href="favicon.ico">
+		<link rel="stylesheet" href="stylesheet.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	 </head>
+	<body>
+		<div class="header">
+			<img class="logo" src="favicon.ico"/>
+			<h2 class="title">RCA Comp #xx Scrambles</h2>
+		 </div>
+		<br>
+		<br>
+		<div class="scrambles">
+			<button onclick="toggle('three')">3x3</button>
+			<div id="three">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('two')">2x2</button>
+			<div id="two">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('four')">4x4</button>
+			<div id="four">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('five')">5x5</button>
+			<div id="five">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('six')">6x6</button>
+			<div id="six">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('seven')">7x7</button>
+			<div id="seven">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('threebld')">3x3 Blindfolded</button>
+			<div id="threebld">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('fmc')">Fewest Moves Challenge</button>
+			<div id="fmc">
+				<img src="fmc.jpg">
+				<ol>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('threeoh')">3x3 One-Handed</button>
+			<div id="threeoh">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('clock')">Clock</button>
+			<div id="clock">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('mega')">Megaminx</button>
+			<div id="mega">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('pyra')">Pyraminx</button>
+			<div id="pyra">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('skewb')">Skewb</button>
+			<div id="skewb">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('squan')">Square-1</button>
+			<div id="squan">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('redi')">Redi Cube</button>
+			<div id="redi">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('twobld')">2x2 Blindfolded</button>
+			<div id="twobld">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('twotwothree')">2x2x3 Cuboid</button>
+			<div id="twotwothree">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('mirror')">Mirror Blocks</button>
+			<div id="mirror">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('kilo')">Kilominx</button>
+			<div id="kilo">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('fifteen')">Fifteen Puzzle</button>
+			<div id="fifteen">
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				 </ol>
+			 </div>
+			<button onclick="toggle('twotofour')">2x2-4x4 Relay</button>
+			<div id="twotofour">
+				<ul>
+					<li>2x2: </li>
+					<li>3x3: </li>
+					<li>4x4: </li>
+				 </ul>
+			 </div>
+		 </div>
+		<script>
+			function toggle(n){
+				var toggleType = n;
+				if(document.getElementById(toggleType).style.display == "block")document.getElementById(toggleType).style.display = "none";
+				else{document.getElementById(toggleType).style.display = "block"}
+			}
+		 </script>
+	</body>
+</html>
