@@ -1,0 +1,127 @@
+<!DOCTYPE html><html><head><title>RCA Official Scrambles</title><link rel="icon" href="favicon.ico"><style>@font-face{font-family:b;src:url(f/b.otf)}@font-face{font-family:r;src:url(f/r.otf)}body{background-color:#25f;font-family:r}h2{font:16pt b}.logo{height:45px;margin-bottom:2.5px}.header{height:50px}.title{display:inline;position:absolute;top:0px;width:auto;left:60px}.scrambles{background-color:#47f;max-width:700px;padding:30px}li{margin-bottom:10px}button{background-color:#25f;margin-bottom:5px;outline:none;border:none;width:100%;height:30px;font:18px b;text-align:left}button~div{display:none}</style><script>function auto(){function nxn(d,h,l,loc){function r(c,b,d,a){for(var f,g,k,l=0;l<d;l++)b[l]&&(f=b[l]-1,g=a,d<=(k=l)+l+1&&(g+=3,k=d-1-k,f=2-f),c[c.length]=4*(6*k+g)+f)}function a(a){for(var b="",c=0;c<s[a].length-1;c++){0!=c&&(b+=" ");var e,i=s[a][c]>>2;(i=(i-(e=i%6))/6)&&!0&&!1?b+="dlburf".charAt(e):(b+="DLBURF".charAt(e),i&&(b+="w")),0!=(e=3&s[a][c])&&(b+=" 2'".charAt(e))}return b}var s=[];(function(){var a,e=d,f=Array(e),g=[0,0,0];for(e--,n=0;n<l;n++){a=-1,s[n]=[];for(var i=0;i<e;i++)f[i]=0;for(var j,t,u,v=g[0]=g[1]=g[2]=0;s[n].length+v<h;){do for(;j=Math.floor(3*Math.random()),t=Math.floor(Math.random()*e),u=Math.floor(3*Math.random()),j==a&&0!=f[t];);while(j==a&&!1&&3==e&&(2*g[0]==e||2*g[1]==e||2*g[2]==e||2*(g[u]+1)==e&&0<g[0]+g[1]+g[2]-g[u]));if(j!=a){for(r(s[n],f,e,a),i=0;i<e;i++)f[i]=0;v=g[0]=g[1]=g[2]=0,a=j}g[u]++,v++,f[t]=u+1}r(s[n],f,e,a)}})();for(var b=0;b<l;b++){var cs=document.createElement("p"),e=document.createTextNode(a(b));cs.appendChild(e),document.getElementById(loc).appendChild(cs)}}function pra(){var f=20,d=5,y=new Array;function g(){for(var r,a,o,e,t=0;t<d;t++){for(y[t]=new Array,e=r=0;e<4;e++)k=Math.floor(3*Math.random()),0!=k&&(y[t][2*r]=e+4,y[t][2*r+1]=k,r++);for(o=-1;r<f;r++){for(;a=Math.floor(4*Math.random()),0<=o&&a==o;);o=a,k=Math.floor(2*Math.random())+1,y[t][2*r]=a,y[t][2*r+1]=k}}}function x(r){for(var a="",o=0;o<y[r].length;o+=2)a+="LRBUlrbu".charAt(y[r][o]),2==y[r][o+1]&&(a+="'"),a+=" ";return a}g();for(var i=0;i<d;i++){var a=document.createElement("p"),l=document.createTextNode(x(i));a.appendChild(l),document.getElementById("pyra").appendChild(a)}}function sqn(){var seqlen=40,numcub=5,seq=[],posit=[];function d(){for(var a,b,c,d,f=0;f<numcub;f++)for(posit=[0,0,1,2,2,3,4,4,5,6,6,7,8,9,9,10,11,11,12,13,13,14,15,15],c=-1,seq[f]=[],a=d=0;a<seqlen;a++){for(;0==c?0<=(b=Math.floor(22*Math.random())-11)&&b++:b=1==c?Math.floor(12*Math.random())-11:2==c?0:Math.floor(23*Math.random())-11,1<d&&-6<=b&&0>b||domove(b););0<b?c=1:0>b?c=2:(c=0,d++),seq[f][a]=b}}function q(a){for(var b,c="",d=-1,f=0;f<seq[a].length;f++)0==(b=seq[a][f])?(-1==d&&(c+="(0,0)  "),1==d&&(c+="0)  "),2==d&&(c+=")  "),d=0):0<b?(c+="("+(6<b?b-12:b)+",",d=1):0>b&&(0>=d&&(c+="(0,"),c+=-6>=b?b+12:b,d=2);return 1==d&&(c+="0"),0!=d&&(c+=")"),c}function domove(a){var b,c,d,f=a;if(0==f)for(b=0;6>b;b++)c=posit[b+12],posit[b+12]=posit[b+6],posit[b+6]=c;else if(0<f){if(posit[f=12-f]==posit[f-1])return!0;if(6>f&&posit[f+6]==posit[f+5])return!0;if(6<f&&posit[f-6]==posit[f-7])return!0;if(6==f&&posit[0]==posit[11])return!0;for(d=[],b=0;12>b;b++)d[b]=posit[b];for(c=f,b=0;12>b;b++)posit[b]=d[c],11==c?c=0:c++}else if(0>f){if(posit[(f=-f)+12]==posit[f+11])return!0;if(6>f&&posit[f+18]==posit[f+17])return!0;if(6<f&&posit[f+6]==posit[f+5])return!0;if(6==f&&posit[12]==posit[23])return!0;for(d=[],b=0;12>b;b++)d[b]=posit[b+12];for(c=f,b=0;12>b;b++)posit[b+12]=d[c],11==c?c=0:c++}return!1}d();for(var i=0;i<numcub;i++){var e=document.createElement("p"),g=document.createTextNode(q(i));e.appendChild(g),document.getElementById("squan").appendChild(e)}}function skb(){var b=8,d=5,f=new Array;function g(){for(var r,e,a,t=0;t<d;t++)for(f[t]=new Array,a=-1,r=0;r<b;r++){for(;e=Math.floor(4*Math.random()),0<=a&&e==a;);a=e,k=Math.floor(2*Math.random())+1,f[t][2*r]=e,f[t][2*r+1]=k}}function h(r){for(var e="",a=0;a<f[r].length;a+=2)e+="FRBL".charAt(f[r][a]),2==f[r][a+1]&&(e+="'"),e+=" ";return e}g();for(var i=0;i<d;i++){var j=document.createElement("p"),l=document.createTextNode(h(i));j.appendChild(l),document.getElementById("skewb").appendChild(j)}}nxn(3,20,5,"three");nxn(2,9,5,"two");nxn(4,45,5,"four");nxn(5,60,5,"five");nxn(6,80,3,"six");nxn(7,100,3,"seven");nxn(3,20,5,"throh");pra();skb();sqn();nxn(2,9,3,"twbld");nxn(3,20,5,"mir");nxn(2,9,1,"rtwo");nxn(3,20,1,"rthree");nxn(4,45,1,"rfour")}</script></head><body onload="auto()"><div class="header"><img class="logo" src="favicon.ico"/><h2 class="title">RCA Comp #49 Scrambles</h2></div><br><br><div class="scrambles">
+			<button onclick="tg('three')">3x3</button><div id="three"></div>
+			<button onclick="tg('two')">2x2</button><div id="two"></div>
+			<button onclick="tg('four')">4x4</button><div id="four"></div>
+			<button onclick="tg('five')">5x5</button><div id="five"></div>
+			<button onclick="tg('six')">6x6</button><div id="six"></div>
+			<button onclick="tg('seven')">7x7</button><div id="seven"></div>
+			<button onclick="tg('thbld')">3x3 Blindfolded</button><div id="thbld">
+				<li>F' R B2 R2 F2 R2 D2 B2 R' B2 R' D2 U' F' L' U B F2 L U Rw2 Uw2</li>
+				<li>F' L2 U' F2 D' B2 D B2 R2 D2 F2 B U2 L D R' F U' R2 B2 Rw' Uw2</li>
+				<li>R' F2 L B2 L2 D2 U' L2 F2 R2 B2 U B R2 D' L2 D L2 F' Rw Uw</li>
+			</div>
+			<button onclick="tg('fmc')">Fewest Moves Challenge</button><div id="fmc">
+				<img src="fmc.jpg">
+				<ol>
+					<li>R' U' F D' L2 B2 F2 U B2 U' R2 D2 B2 R2 L' D B' D2 L' F2 U2 L' U R' U' F</li>
+				 </ol>
+			</div>
+			<button onclick="tg('throh')">3x3 One-Handed</button><div id="throh"></div>
+			<button onclick="tg('clk')">Clock</button><div id="clk">
+				<li>UR3- DR3- DL1+ UL3- U4+ R3+ D1+ L0+ ALL5+ y2 U3- R5- D5+ L1+ ALL0+ UR DL</li>
+				<li>UR2- DR1- DL3- UL5+ U4+ R6+ D0+ L6+ ALL2+ y2 U3+ R4- D3- L2+ ALL1+ UR DR</li>
+				<li>UR1- DR6+ DL0+ UL3- U4- R5- D0+ L3+ ALL4+ y2 U5- R1- D1+ L5+ ALL2- DL</li>
+				<li>UR3+ DR3+ DL5+ UL0+ U1+ R1- D1- L6+ ALL1+ y2 U3- R2+ D4- L1- ALL6+ UR UL</li>
+				<li>UR6+ DR2- DL1+ UL5+ U6+ R1+ D2- L4- ALL5- y2 U3+ R1+ D1- L1- ALL0+ UR UL</li>
+			</div>
+			<button onclick="tg('mega')">Megaminx</button><div id="mega">
+				<li>  R++ D++ R++ D++ R-- D-- R-- D-- R++ D-- U'<br>
+  					  R++ D++ R-- D++ R++ D-- R-- D-- R-- D-- U'<br>
+  					  R++ D++ R-- D-- R++ D++ R++ D-- R-- D-- U'<br>
+  					  R++ D++ R++ D++ R-- D++ R++ D++ R-- D-- U'<br>
+  					  R-- D-- R++ D++ R-- D++ R++ D-- R++ D++ U <br>
+  					  R++ D-- R-- D-- R++ D-- R++ D-- R-- D++ U <br>
+  					  R++ D-- R-- D-- R++ D++ R-- D-- R++ D-- U'</li>
+				<li>  R-- D++ R++ D++ R-- D-- R++ D++ R-- D++ U <br>
+  					  R-- D++ R++ D-- R++ D++ R++ D-- R++ D++ U <br>
+  					  R-- D++ R++ D-- R-- D-- R++ D++ R-- D-- U'<br>
+  					  R++ D-- R++ D-- R++ D-- R++ D++ R-- D++ U <br>
+  					  R++ D-- R++ D-- R++ D++ R-- D++ R++ D++ U <br>
+  					  R++ D-- R++ D-- R-- D-- R++ D++ R-- D++ U <br>
+  					  R++ D++ R++ D-- R-- D++ R++ D-- R-- D++ U </li>
+				<li>  R++ D++ R++ D-- R-- D++ R-- D++ R++ D-- U'<br>
+  					  R++ D++ R++ D-- R-- D++ R++ D++ R++ D++ U <br>
+  					  R++ D++ R++ D-- R++ D++ R-- D++ R-- D++ U <br>
+  					  R-- D-- R++ D++ R++ D-- R-- D++ R-- D++ U <br>
+  					  R++ D++ R++ D++ R++ D-- R++ D-- R++ D++ U <br>
+  					  R-- D-- R++ D-- R-- D-- R++ D++ R-- D++ U <br>
+  					  R++ D-- R-- D++ R++ D-- R++ D++ R-- D++ U </li>
+				<li>  R-- D-- R-- D-- R-- D++ R-- D++ R++ D-- U'<br>
+  					  R++ D-- R-- D++ R++ D-- R-- D++ R++ D++ U <br>
+  					  R++ D++ R-- D-- R++ D++ R++ D-- R++ D-- U'<br>
+  					  R++ D++ R-- D++ R-- D++ R++ D-- R++ D++ U <br>
+  					  R-- D++ R++ D-- R++ D++ R-- D++ R-- D++ U <br>
+  					  R-- D++ R++ D-- R++ D++ R-- D-- R-- D-- U'<br>
+  					  R-- D-- R-- D-- R++ D-- R-- D++ R++ D++ U </li>
+				<li>  R++ D-- R-- D-- R-- D-- R-- D++ R-- D-- U'<br>
+  					  R-- D-- R++ D-- R++ D++ R-- D++ R-- D++ U <br>
+  					  R-- D-- R-- D++ R-- D++ R-- D-- R++ D-- U'<br>
+  					  R-- D++ R-- D++ R++ D++ R++ D++ R++ D-- U'<br>
+  					  R++ D-- R-- D++ R++ D++ R-- D++ R-- D++ U <br>
+  					  R++ D-- R++ D-- R++ D-- R++ D++ R-- D++ U <br>
+  					  R++ D-- R-- D-- R++ D++ R-- D++ R++ D-- U'</li>
+			</div>
+			<button onclick="tg('pyra')">Pyraminx</button><div id="pyra"></div>
+			<button onclick="tg('skewb')">Skewb</button><div id="skewb"></div>
+			<button onclick="tg('squan')">Square-1</button><div id="squan"></div>
+			<button onclick="tg('redi')">Redi Cube</button><div id="redi">
+				<li>L' R' L' x R L' R L x L R L R x L' R L x R' L R' x R L R L R' x R' L' R L x L R L'</li>
+				<li>L R' L R L x R' L' R x L R L x L' R' L x R L' R' x L R' L' R L' x R' L R' L' R x L' R' L R' L'</li>
+				<li>L' R L R' L' x L R L' R x L' R L x R L' R' L' x L R L' x L R L R' L x R L R L' R x R' L' R</li>
+				<li>R' L' R' L' x L R L R x L R L R' L x L R' L' R x L R' L R' L' x L R' L' R' x R' L R x L' R L' R</li>
+				<li>L R L' R L x R L R x L R' L R x L' R L' R' x L R' L' x R' L R' L R' x L' R' L R x R L' R' L R'</li>
+			</div>
+			<button onclick="tg('twbld')">2x2 Blindfolded</button><div id="twbld"></div>
+			<button onclick="tg('tower')">2x2x3 Cuboid</button><div id="tower">
+				<li>D' F2 D' R2 D  R2 U2 F2</li>
+				<li>R2 U  R2 D2 F2 U' R2 U2 F2 U' R2 U  R2</li>
+				<li>F2 U2 R2 U' R2 U' R2 U  F2</li>
+				<li>R2 D  R2 F2 D  R2 U  F2</li>
+				<li>R2 D' R2 D  F2 U' F2 D  F2 D  R2</li>
+			</div>
+			<button onclick="tg('mir')">Mirror Blocks</button><div id="mir"></div>
+			<button onclick="tg('kilo')">Kilominx</button><div id="kilo">
+				<li>  R++ D-- R++ D-- R-- D-- R++ D-- R++ D-- U'<br>
+  					  R-- D-- R-- D-- R-- D-- R-- D++ R-- D++ U <br>
+  					  R++ D++ R-- D++ R-- D++ R++ D-- R-- D-- U'<br>
+  					  R-- D-- R-- D-- R-- D-- R-- D++ R-- D-- U'<br>
+  					  R++ D-- R++ D-- R-- D++ R-- D++ R-- D++ U <br>
+  					  R++ D-- R-- D-- R++ D-- R-- D-- R++ D++ U <br>
+  					  R-- D-- R-- D-- R++ D++ R-- D++ R-- D++ U </li>
+				<li>  R-- D++ R-- D-- R++ D-- R++ D++ R-- D-- U'<br>
+  					  R++ D++ R++ D-- R-- D-- R++ D-- R-- D++ U <br>
+  					  R++ D++ R-- D-- R-- D-- R-- D-- R-- D++ U <br>
+  					  R++ D-- R-- D-- R-- D-- R-- D-- R-- D-- U'<br>
+  					  R++ D-- R++ D-- R-- D++ R++ D++ R-- D-- U'<br>
+  					  R++ D++ R++ D++ R++ D++ R++ D++ R++ D-- U'<br>
+  					  R-- D-- R-- D-- R-- D++ R++ D++ R++ D++ U </li>
+				<li>  R-- D-- R-- D++ R++ D++ R-- D++ R-- D-- U'<br>
+                      R-- D++ R-- D-- R-- D++ R++ D++ R-- D++ U <br>
+                      R-- D++ R-- D++ R-- D++ R++ D-- R-- D++ U <br>
+                      R-- D++ R++ D-- R++ D-- R-- D-- R-- D-- U'<br>
+                      R-- D-- R-- D++ R++ D-- R++ D-- R++ D-- U'<br>
+                      R++ D-- R-- D++ R++ D-- R++ D++ R++ D-- U'<br>
+                      R-- D-- R++ D++ R-- D++ R++ D++ R-- D-- U'</li>
+				<li>  R-- D-- R++ D-- R-- D++ R-- D++ R++ D++ U <br>
+                      R-- D-- R++ D++ R-- D-- R-- D-- R-- D++ U <br>
+                      R-- D-- R++ D-- R-- D++ R++ D++ R-- D++ U <br>
+                      R-- D-- R++ D++ R-- D-- R++ D-- R++ D++ U <br>
+                      R-- D++ R-- D++ R++ D-- R++ D-- R-- D-- U'<br>
+                      R++ D-- R-- D-- R++ D-- R-- D++ R++ D-- U'<br>
+                      R-- D++ R++ D-- R-- D-- R-- D-- R-- D-- U'</li>
+				<li>  R++ D++ R-- D-- R-- D++ R-- D++ R-- D++ U <br>
+  					  R++ D-- R-- D-- R++ D++ R++ D-- R++ D-- U'<br>
+  					  R++ D-- R++ D++ R++ D++ R-- D++ R++ D++ U <br>
+  					  R-- D-- R++ D++ R-- D-- R++ D-- R++ D-- U'<br>
+  					  R++ D++ R++ D-- R-- D-- R-- D-- R++ D-- U'<br>
+  					  R++ D-- R-- D-- R-- D-- R-- D-- R++ D++ U <br>
+  					  R-- D-- R-- D-- R++ D++ R++ D++ R-- D++ U </li>
+			</div>
+			<button onclick="tg('fiftn')">Fifteen Puzzle</button><div id="fiftn">
+				<li>D2 R2 U L D R U2 L D2 R U R U L2 D R2 D L2 U R2 D L U2 L D2 R D R U2 L2 D2 L U R D R U2 L2 D D R3</li>
+				<li>R D2 L U2 R D R D L2 U2 R D2 L U2 R2 D2 L2 R2 U2 R D2 L U2 R D2 L U2 L D2 R2 U L3 D R D R2 U L2 U R D2 L U3 R D3 L2 U3 R2 D2 R D U2 L</li>
+				<li>D R2 D L2 U2 R2 D2 L U2 R D2 L U2 R D D L2 D R U L U R2 D L U R D2 L U3 R D2 L R U2 R D L U L D3 R U2 L D R2 U L3 D R2 U2 R D L D</li>
+				<li>R2 D L2 D R U L U R D R D L2 R2 U2 R D L2 U R D2 L2 U2 R3 D2 L D L2 U R2 D R U2 L D2 R U2 L U R D3 L2</li>
+				<li>D2 R U R U L2 D R2 U L2 D2 R U2 L D2 R2 D L U2 R D2 L2 R2 U R U L D R D L2 U R U2 R D3 L2 U3 R2 D3 L2 U</li>
+			</div>
+			<button onclick="tg('twthf')">2x2-4x4 Relay</button><div id="twthf"><div id="rtwo"></div><div id="rthree"></div><div id="rfour"></div></div></div><script>function tg(a){var b=a;document.getElementById(b).style.display="block"==document.getElementById(b).style.display?"none":"block"}</script></body></html>

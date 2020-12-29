@@ -1,283 +1,127 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>RCA Official Scrambles</title>
-		<link rel="icon" href="favicon.ico">
-		<link rel="stylesheet" href="stylesheet.css"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	 </head>
-	<body>
-		<div class="header">
-			<img class="logo" src="favicon.ico"/>
-			<h2 class="title">RCA Comp #46 Scrambles</h2>
-		 </div>
-		<br>
-		<br>
-		<div class="scrambles">
-			<button onclick="toggle('three')">3x3</button>
-			<div id="three">
-				<ol>
-					<li>U2 B2 U R2 F R' U R' D R2 F2 D2 R2 L D2 B2 R D2 B2</li>
-					<li>U2 R' B' D B L2 D F' L' U2 D R2 B2 D F2 U2 F2 R2 U' L2</li>
-					<li>B' U2 B' R2 U L' B U2 R2 L2 B2 U D2 L2 D' F2 R2 L2 D F' L'</li>
-					<li>B2 D2 L2 B2 L2 U F2 U' R2 F2 B U R' D F' L' D' R2 D F</li>
-					<li>U R' B2 F2 L2 U' B2 L2 R2 D U2 R2 U F D' B F2 R U' L2</li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('two')">2x2</button>
-			<div id="two">
-				<ol>
-					<li>R U2 F R' F U' F R2 U2</li>
-					<li>F U' F2 U R' U R2 U' F'</li>
-					<li>R2 F2 U2 F' R U' F2 R U2 F'</li>
-					<li>F U' R' F R2 F' R U F'</li>
-					<li>R' U2 F2 R2 F' R U' R' U'</li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('four')">4x4</button>
-			<div id="four">
-				<ol>
-					<li>R B2 F2 D2 B2 R' F2 L' D2 F2 R' F' U L R' U' R B D R D2 Rw2 D2 Rw2 Uw2 R' Fw2 F B2 Rw2 B R' B Uw R2 B Uw' Fw' D Rw' D2 L U Rw'</li>
-					<li>B' U F' D2 B2 R B2 U' L' B D2 B2 L2 D2 F U2 F' L2 B L2 U2 Uw2 R2 B' U' Rw2 Uw2 D Fw2 U2 B2 F R2 Rw' Fw2 B2 L U2 L Uw Rw' B2 Uw' L' Uw L'</li>
-					<li>B D' B' L' F2 B L' R2 U D2 B2 R2 D2 F2 R2 U2 F2 D L2 F' R Uw2 F' L2 D' F2 Rw2 D' L2 Uw2 Fw2 L2 Uw2 Rw' Fw2 B' D Rw U' B' Uw' Fw B Uw R</li>
-					<li>L2 D L' B2 U B2 L' F' U2 B' R2 B R2 B' R2 F' L2 U2 R F' Fw2 Uw2 R2 U' Fw2 F' D L2 Fw2 U' L2 F Rw B' L' Uw2 F' Fw' Rw F D Rw2 U' B2</li>
-					<li>D B2 U' R2 U' F2 L2 D2 F2 R2 U2 B U2 L' R' F' D' R D' F2 D Fw2 R' Uw2 Rw2 B R' U2 R2 Fw2 L2 Fw2 D2 Uw R U F Uw2 B' U2 Rw' U2 Rw' Fw B' D2</li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('five')">5x5</button>
-			<div id="five">
-				<ol>
-					<li>B2 D2 Fw' Uw2 F L2 Dw' L R2 Dw Fw2 U Bw' Lw2 D Lw B R Bw' Fw2 L Fw' B U' B Uw2 D' Lw F D2 Bw2 D' R2 Lw L' D Lw' Bw Dw' D2 R Uw2 F R' U' F' Bw R2 Lw2 Bw2 U2 Uw F U L' Lw2 F2 Rw Fw' Lw2</li>
-					<li>Lw' R' B D L Fw' D' U' Bw2 U2 F U' F2 L U' L Rw F2 U' D Bw' Lw2 Dw Rw D Uw L U' D' Uw Rw2 R D2 R Lw2 Rw' Dw' Uw2 Rw' Dw' R' Bw2 F R Lw Uw2 Lw' B' Fw' D' L2 U' L' D2 Rw2 D' U Rw2 Uw' D</li>
-					<li>Dw2 Fw' Rw' R F' Uw2 Rw' L' Bw' Rw Dw Bw B D' F' Lw2 Dw F' D2 U2 B' Uw' R' Dw U Rw2 R' U2 F2 Uw' B D' Fw2 D' Rw Dw' L Dw2 Uw U F Dw2 U' Bw' B' R' F' U' L2 F2 R' D2 Lw2 Bw D2 L Bw Fw U' R'</li>
-					<li>Rw2 Lw D' L2 Bw2 Fw B D B2 Bw' Lw Bw Lw Bw2 B' D2 Fw U Dw2 R2 Dw B' F' L' Fw2 F' Rw Lw' Bw B2 D' U2 Dw Fw Rw U L2 R2 Rw2 D' L2 Dw' Lw Dw2 R' L D U2 F2 Rw Dw Bw' Fw R2 L' D2 U Rw' Uw2 B'</li>
-					<li>Uw B2 L' Fw' U' D2 Bw Rw Dw2 F' Uw2 Rw' Uw2 R2 U' Rw2 D' Dw Lw' Rw' U' Uw' R2 L2 Rw' Bw2 Lw Rw' B2 Fw Lw' Bw' Rw2 Uw' D Lw2 Uw Bw Uw2 U' L2 U' R Rw Fw2 F' Uw L' F' R2 D' F' Lw Fw B' Dw L' Bw U2 R'</li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('six')">6x6</button>
-			<div id="six">
-				<ol>
-					<li>Bw' 3Uw' D2 B2 3Rw' F2 Dw 3Fw' U' R' U' 3Uw' Dw2 3Fw2 Uw 3Fw Uw F R' F' 3Rw' 3Fw' Fw' Bw B' D L' B' Dw2 Lw2 B' Dw U2 Rw' D' U2 3Fw Lw Dw' 3Fw Bw2 R L B2 Fw' Uw F Lw' B 3Fw2 L' R2 F2 3Uw' D Dw F B' 3Rw' 3Fw Rw Dw 3Fw Dw2 R2 Bw' 3Uw' D2 R' 3Rw' 3Fw F Fw' U Lw' 3Fw2 Fw 3Rw Fw Uw'</li>
-					<li>B2 Fw2 F Rw' Fw' B L' Uw U R' B' D' L' 3Rw2 Dw' U 3Fw B' L' 3Fw2 L U B Lw 3Uw2 Rw R L' 3Uw U' Dw2 L2 3Rw2 Bw Lw' U' F' 3Fw2 L' 3Uw Bw Rw' 3Fw' Rw' B2 U 3Rw2 Rw' Dw 3Rw2 U2 Dw2 Bw2 D' 3Rw' 3Fw' 3Uw' D U2 L Fw2 Lw' R' Fw' R L' D' B R2 F' 3Fw' 3Uw2 Dw' B U2 3Fw Fw2 Uw2 L' F2</li>
-					<li>Fw R2 Bw2 B U' L2 D' Bw2 3Fw' B L Bw F2 3Uw2 F2 3Fw' 3Rw' Dw Bw U2 3Uw L Lw' Uw2 Fw' 3Uw Bw2 Lw2 Fw2 U 3Rw Uw' 3Fw' U' 3Uw R2 3Fw2 B L Lw' U' 3Uw' D' Fw2 B' 3Rw2 Lw2 L2 U B L' Rw Dw F2 Lw2 Uw' B' U2 Dw' Uw2 3Rw 3Fw2 F2 D' Uw2 3Rw2 B' Uw Lw R L2 3Rw2 B2 D 3Fw' U2 Rw L F Fw'</li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('seven')">7x7</button>
-			<div id="seven">
-				<ol>
-					<li>3Rw' L' Dw' D2 3Bw U Fw' 3Bw2 F2 Rw2 Bw 3Bw Uw2 R2 3Rw' 3Bw 3Uw' L' B' U' 3Rw2 U' 3Rw L2 Lw2 3Lw' B2 3Rw2 Fw Rw 3Dw' U2 Fw 3Dw U' Bw2 Dw2 L 3Uw B' 3Rw' U L2 3Fw2 Fw' D2 Lw' B 3Rw' B 3Rw2 3Bw2 3Uw' B2 Lw2 Uw' U2 3Bw' B' Fw2 F' Rw' L2 F' 3Rw Dw2 B' Uw' Fw Bw2 3Rw Fw B2 U2 3Dw Lw2 3Dw R2 D 3Dw2 R' 3Bw' Uw 3Bw' 3Dw 3Uw' 3Rw 3Uw2 D2 3Dw' F' 3Fw' R' L' D Dw' Rw' 3Dw2 Fw2 3Fw2</li>
-					<li>Bw' F2 3Lw2 3Dw' U' F' 3Lw 3Bw2 U' Bw' 3Uw2 R' 3Lw 3Fw Bw' U 3Bw 3Lw Bw2 Dw R' D 3Fw2 3Rw2 3Uw2 L2 D' B2 3Rw' Uw' F' U' R2 Dw' D' R2 Fw' F Bw' 3Bw' Dw 3Dw2 B2 U2 3Rw L' B' Rw 3Lw R U' F Uw 3Bw2 Rw2 3Bw2 Uw' 3Fw' 3Rw' Bw2 3Rw U2 Bw' Uw Bw2 3Lw' 3Bw B 3Rw2 U2 L Lw Fw' Rw 3Uw Fw 3Bw2 U2 Rw' Dw R' B 3Dw' B R 3Rw2 D' B2 U L' B2 Uw 3Bw2 Rw' 3Uw2 Lw' Uw2 L' 3Fw2 Rw'</li>
-					<li>Uw Rw 3Bw 3Dw' 3Lw 3Fw2 3Uw' Uw' 3Dw2 B2 U Dw2 3Lw 3Uw2 3Bw' B2 R' F2 B' L' Fw2 Bw R2 Uw' L 3Fw2 Fw2 D Fw 3Uw R Bw' 3Fw2 3Bw' D U2 3Dw' Bw' Lw Fw Uw 3Uw2 3Rw2 D' 3Rw 3Lw2 Dw' 3Rw2 Bw' Fw2 F' 3Bw' 3Lw' Bw' Rw 3Lw2 3Rw' 3Fw2 B' 3Lw2 D' Bw2 3Rw' 3Uw' F 3Uw' 3Fw2 3Uw2 D' 3Lw 3Rw2 Lw' 3Dw U2 R 3Uw2 3Fw Dw Uw B' Uw2 L2 Lw' 3Dw' Fw2 3Uw' Dw' Fw 3Rw2 Uw 3Bw' 3Dw Bw' F' 3Dw 3Uw Uw D2 Fw 3Uw2</li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('threebld')">3x3 Blindfolded</button>
-			<div id="threebld">
-				<ol>
-					<li>B U L2 D' R L2 D F U' R2 U B2 D' B2 D2 B2 R2 U' D' F Uw</li>
-					<li>U D' B' U' B2 L2 U' R D2 F2 R2 U2 B2 R2 U L2 D' F2 B2 R' Fw' Uw2</li>
-					<li>L2 U' L U' R F L D U2 F' D2 B2 U2 F R2 B' D2 B D2 R' Rw2 Uw'</li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('fmc')">Fewest Moves Challenge</button>
-			<div id="fmc">
+<html><head><title>RCA Official Scrambles</title><link rel="icon" href="favicon.ico"><style>@font-face{font-family:b;src:url(f/b.otf)}@font-face{font-family:r;src:url(f/r.otf)}body{background-color:#25f;font-family:r}h2{font:16pt b}.logo{height:45px;margin-bottom:2.5px}.header{height:50px}.title{display:inline;position:absolute;top:0px;width:auto;left:60px}.scrambles{background-color:#47f;max-width:700px;padding:30px}li{margin-bottom:10px}button{background-color:#25f;margin-bottom:5px;outline:none;border:none;width:100%;height:30px;font:18px b;text-align:left}button~div{display:none}</style><script>function auto(){function nxn(d,h,l,loc){function r(c,b,d,a){for(var f,g,k,l=0;l<d;l++)b[l]&&(f=b[l]-1,g=a,d<=(k=l)+l+1&&(g+=3,k=d-1-k,f=2-f),c[c.length]=4*(6*k+g)+f)}function a(a){for(var b="",c=0;c<s[a].length-1;c++){0!=c&&(b+=" ");var e,i=s[a][c]>>2;(i=(i-(e=i%6))/6)&&!0&&!1?b+="dlburf".charAt(e):(b+="DLBURF".charAt(e),i&&(b+="w")),0!=(e=3&s[a][c])&&(b+=" 2'".charAt(e))}return b}var s=[];(function(){var a,e=d,f=Array(e),g=[0,0,0];for(e--,n=0;n<l;n++){a=-1,s[n]=[];for(var i=0;i<e;i++)f[i]=0;for(var j,t,u,v=g[0]=g[1]=g[2]=0;s[n].length+v<h;){do for(;j=Math.floor(3*Math.random()),t=Math.floor(Math.random()*e),u=Math.floor(3*Math.random()),j==a&&0!=f[t];);while(j==a&&!1&&3==e&&(2*g[0]==e||2*g[1]==e||2*g[2]==e||2*(g[u]+1)==e&&0<g[0]+g[1]+g[2]-g[u]));if(j!=a){for(r(s[n],f,e,a),i=0;i<e;i++)f[i]=0;v=g[0]=g[1]=g[2]=0,a=j}g[u]++,v++,f[t]=u+1}r(s[n],f,e,a)}})();for(var b=0;b<l;b++){var cs=document.createElement("p"),e=document.createTextNode(a(b));cs.appendChild(e),document.getElementById(loc).appendChild(cs)}}function pra(){var f=20,d=5,y=new Array;function g(){for(var r,a,o,e,t=0;t<d;t++){for(y[t]=new Array,e=r=0;e<4;e++)k=Math.floor(3*Math.random()),0!=k&&(y[t][2*r]=e+4,y[t][2*r+1]=k,r++);for(o=-1;r<f;r++){for(;a=Math.floor(4*Math.random()),0<=o&&a==o;);o=a,k=Math.floor(2*Math.random())+1,y[t][2*r]=a,y[t][2*r+1]=k}}}function x(r){for(var a="",o=0;o<y[r].length;o+=2)a+="LRBUlrbu".charAt(y[r][o]),2==y[r][o+1]&&(a+="'"),a+=" ";return a}g();for(var i=0;i<d;i++){var a=document.createElement("p"),l=document.createTextNode(x(i));a.appendChild(l),document.getElementById("pyra").appendChild(a)}}function sqn(){var seqlen=40,numcub=5,seq=[],posit=[];function d(){for(var a,b,c,d,f=0;f<numcub;f++)for(posit=[0,0,1,2,2,3,4,4,5,6,6,7,8,9,9,10,11,11,12,13,13,14,15,15],c=-1,seq[f]=[],a=d=0;a<seqlen;a++){for(;0==c?0<=(b=Math.floor(22*Math.random())-11)&&b++:b=1==c?Math.floor(12*Math.random())-11:2==c?0:Math.floor(23*Math.random())-11,1<d&&-6<=b&&0>b||domove(b););0<b?c=1:0>b?c=2:(c=0,d++),seq[f][a]=b}}function q(a){for(var b,c="",d=-1,f=0;f<seq[a].length;f++)0==(b=seq[a][f])?(-1==d&&(c+="(0,0)  "),1==d&&(c+="0)  "),2==d&&(c+=")  "),d=0):0<b?(c+="("+(6<b?b-12:b)+",",d=1):0>b&&(0>=d&&(c+="(0,"),c+=-6>=b?b+12:b,d=2);return 1==d&&(c+="0"),0!=d&&(c+=")"),c}function domove(a){var b,c,d,f=a;if(0==f)for(b=0;6>b;b++)c=posit[b+12],posit[b+12]=posit[b+6],posit[b+6]=c;else if(0<f){if(posit[f=12-f]==posit[f-1])return!0;if(6>f&&posit[f+6]==posit[f+5])return!0;if(6<f&&posit[f-6]==posit[f-7])return!0;if(6==f&&posit[0]==posit[11])return!0;for(d=[],b=0;12>b;b++)d[b]=posit[b];for(c=f,b=0;12>b;b++)posit[b]=d[c],11==c?c=0:c++}else if(0>f){if(posit[(f=-f)+12]==posit[f+11])return!0;if(6>f&&posit[f+18]==posit[f+17])return!0;if(6<f&&posit[f+6]==posit[f+5])return!0;if(6==f&&posit[12]==posit[23])return!0;for(d=[],b=0;12>b;b++)d[b]=posit[b+12];for(c=f,b=0;12>b;b++)posit[b+12]=d[c],11==c?c=0:c++}return!1}d();for(var i=0;i<numcub;i++){var e=document.createElement("p"),g=document.createTextNode(q(i));e.appendChild(g),document.getElementById("squan").appendChild(e)}}function skb(){var b=8,d=5,f=new Array;function g(){for(var r,e,a,t=0;t<d;t++)for(f[t]=new Array,a=-1,r=0;r<b;r++){for(;e=Math.floor(4*Math.random()),0<=a&&e==a;);a=e,k=Math.floor(2*Math.random())+1,f[t][2*r]=e,f[t][2*r+1]=k}}function h(r){for(var e="",a=0;a<f[r].length;a+=2)e+="FRBL".charAt(f[r][a]),2==f[r][a+1]&&(e+="'"),e+=" ";return e}g();for(var i=0;i<d;i++){var j=document.createElement("p"),l=document.createTextNode(h(i));j.appendChild(l),document.getElementById("skewb").appendChild(j)}}nxn(3,20,5,"three");nxn(2,9,5,"two");nxn(4,45,5,"four");nxn(5,60,5,"five");nxn(6,80,3,"six");nxn(7,100,3,"seven");nxn(3,20,5,"throh");pra();skb();sqn();nxn(2,9,3,"twbld");nxn(3,20,5,"mir");nxn(2,9,1,"rtwo");nxn(3,20,1,"rthree");nxn(4,45,1,"rfour")}</script></head><body onload="auto()"><div class="header"><img class="logo" src="favicon.ico"><h2 class="title">RCA Comp #49 Scrambles</h2></div><br><br><div class="scrambles">
+			<button onclick="tg('three')">3x3</button><div id="three" style="display: block;"><p>B D B2 D2 F2 D2 L2 R F2 U2 B' D U B' L2 U' F' L' B2</p><p>L' D R B R F U2 R U R B2 R2 D U B U' B' F2 L</p><p>L D' U2 L F' D F2 D F2 R U' R2 U' L F R' B2 L2 D'</p><p>L B' R' B U' L R' F2 U' L2 F' L R D2 U2 F' L B' L</p><p>L' B2 D2 R F R D R F U F' D' B L2 B' L D2 R2 U'</p></div>
+			<button onclick="tg('two')">2x2</button><div id="two"><p>U2 R' F' U R2 F2 U R2</p><p>U F U F2 U' F2 R2 F'</p><p>U2 F' U' F2 U2 F2 U2 F2</p><p>F2 R F' U2 F R F' U</p><p>F R' U R2 F R U2 F'</p></div>
+			<button onclick="tg('four')">4x4</button><div id="four"><p>U F' U' L Rw R Fw' F U Fw2 Uw2 B L' Uw' L Rw2 D' R2 F2 L' Rw' D' Uw2 F' L Rw R' F2 L2 B Fw' L Rw2 B2 Fw2 L B' Fw2 F' Uw2 L' Rw' R2 B'</p><p>F Rw' U R' Uw F Uw R' Uw' B2 Fw L2 R' Fw2 D B' L Uw U B L2 Uw' L Uw B Fw2 F2 U2 Fw' D' Uw U' L D2 R2 Fw' F R Uw L F' D2 L D2</p><p>B2 Uw2 B2 Rw' D Uw' Rw' R' D2 L2 Rw2 F' R F' L2 R2 Uw L2 B' L Fw' D2 U2 L2 Fw2 F U' L' B D U2 B2 F L' Uw' U B Rw' Fw L2 Uw2 R' Uw' Fw</p><p>Uw U B2 Rw2 R' U' R2 Fw' Uw' R' Fw' F Rw2 D Fw2 F2 Rw F Uw Fw F L D' U L2 Fw F2 Rw' U2 Rw D' B2 D' L Fw' L2 B2 Fw2 F Rw' D2 L' Rw' Uw</p><p>U2 Fw' R B Fw2 F Uw2 Fw R2 D Uw L Rw2 R U2 Fw2 F D' Fw' Rw' Uw R' B' Rw' U L' F' R' D B F L' U2 B Rw' Fw U2 B' D U2 F' D B Uw'</p></div>
+			<button onclick="tg('five')">5x5</button><div id="five"><p>Rw D2 Uw2 Lw' Fw Lw D B2 Dw2 B' Bw2 F' U Bw' L' Bw' Dw' Fw L2 Rw2 F' R2 F' U2 L2 Lw' F' Dw2 Lw D' Lw2 Dw2 Uw' L' Rw2 F2 Rw2 Dw2 B2 L2 U' L Lw2 R Bw D2 Uw2 Lw2 Rw F Dw2 Fw2 D2 Dw2 U2 B' Lw' B R2</p><p>Dw2 U' Lw' Bw2 Uw2 F2 Lw' B2 Bw' Fw' F2 Rw2 D Bw2 L' D F' D' Lw2 B' U2 Fw2 Lw2 F Dw' Uw2 U2 B2 Bw' Fw' Dw' B' D2 B2 D' L2 F Uw R2 Bw Fw' F Dw' Uw B' Lw Rw' Dw' B F' R2 B Uw' L' Uw2 U F Uw Lw2</p><p>Lw Rw2 B2 F2 Dw2 U' L' Lw' Rw' B Bw2 Fw F' Lw' R' F2 D' Uw2 U' Bw2 Lw' Dw B U Bw Fw' F' Lw' Dw Lw Rw' D' Dw2 Uw2 Lw Rw' Uw B Rw Fw Lw2 F L Lw Rw R' F' Lw' Rw' Uw U' B' D B2 F2 L' Lw Bw R'</p><p>Rw2 D2 Uw2 Bw2 Dw2 Uw2 Rw' B Bw L Dw2 Bw2 D2 F' Rw B2 L B' R2 D Rw B' Lw2 R2 Dw Uw' Bw' R D F' Dw Fw2 Dw' L2 Rw Dw2 Bw Rw' Bw2 L' R' D Rw' Uw2 B2 Lw2 B' Bw R2 U2 Rw' B Dw2 R' D Fw' Uw U Bw2</p><p>R2 Bw2 U F Rw F L2 Lw2 Uw Bw2 Lw R' D2 F2 D' Fw' D Rw B2 Dw2 F' R2 U L' Rw B' R2 B L' Rw' Dw B D R B2 Fw Dw2 L R' Fw2 F2 Rw Dw Uw2 Fw' L R2 Bw F2 U2 B2 R2 Bw2 F Uw' Lw F' Uw' B2</p></div>
+			<button onclick="tg('six')">6x6</button><div id="six"><p>B R2 U2 F' Lw R2 Uw B2 Bw2 F2 Rw2 R2 D' Uw' B2 Lw2 B L R Uw' B F' Rw Fw' Lw' Fw2 L Bw' Fw F2 Lw2 Rw2 Fw F2 Uw2 L2 Fw D R' Fw' L' Rw' Fw' Uw' Fw Dw' U2 Fw2 D2 Lw' Rw Fw2 Rw F2 L' Uw2 Fw' Dw2 B Rw' U2 F2 D2 Dw2 Uw' U2 L' Uw Lw2 Uw' B' Fw2 Uw2 L Rw F2 L Dw' F2</p><p>Rw2 B2 Lw' Rw Dw2 B Dw R Dw F D B Lw D' Rw' Dw Rw' U' F Rw Fw Uw' L' U2 Lw' Rw Rw' Uw' Fw Uw' Rw2 Bw' Fw' L Lw' Bw Dw' U Rw' F2 Uw R B' Uw2 Bw2 D Uw2 F2 Uw B Fw2 Lw' R2 Uw Uw Rw F' Dw' Fw2 L Rw D Uw Bw L Fw Rw2 Fw Lw2 Rw Rw' Fw Uw Uw U Rw U2 B' Rw2</p><p>U Bw Fw2 Fw2 F2 L' Lw R2 U2 L R U L2 Rw Fw' Uw' Bw R2 B' Bw2 F' L2 Rw' R B L2 Lw' Rw2 Uw2 F Dw2 Uw' Fw Rw B2 L2 B2 Dw Uw2 Fw' Uw2 B Lw2 Rw' R2 D2 Rw2 F2 Lw D Dw Rw D Fw Dw Uw2 L Dw2 F' Uw' Rw Bw2 Uw' Bw Fw' Dw Fw' Uw2 Lw' Dw B' Bw Fw D Uw2 Uw Bw2 Fw2 R'</p></div>
+			<button onclick="tg('seven')">7x7</button><div id="seven"><p>Lw Dw Uw' L2 Uw Rw U' Fw' Fw2 F Lw Rw' Fw' Rw2 Fw2 Lw' Rw2 Uw2 Bw2 L Rw Dw' Uw2 Bw D Dw B2 Lw2 Lw2 Rw B Bw' Fw2 R D' L D2 Dw2 F2 Rw Dw' R Dw R Uw L' D Bw' D' Dw2 Uw2 R2 Dw' Lw2 Bw' Fw2 L2 F' D' Bw2 Lw2 Uw' Bw Lw' Fw2 L D2 U2 L2 Lw D2 Fw2 Fw' Rw2 Uw' Rw R Fw L Uw2 Lw' R Dw2 Uw2 Lw Bw2 Uw2 Lw Bw2 Bw2 Dw' Lw Fw' L2 Rw F Uw2 U2 Lw'</p><p>Fw2 F L2 R2 Uw L Fw' L Dw' Bw Lw Rw2 Dw Bw Lw' Rw Uw' Fw D' Dw' Uw2 Rw2 B2 F' U Bw Uw Uw' Bw' U' Rw2 D' U R2 Dw' Bw' Fw2 F D2 Rw2 R2 Dw Uw2 B' Fw' Dw L2 Bw' Fw' L F2 D Lw F Dw2 B2 D' Dw Dw Uw' Bw' Uw' Lw' D2 Fw2 Fw2 L B2 Bw Lw' B2 Bw' Dw Lw D2 Lw Rw' Rw' Uw R2 D Uw' Rw Fw F2 Lw' F2 U2 Bw2 L2 Bw2 Fw' F Dw Bw' Fw' F2 Rw2 Fw</p><p>Rw' U2 Bw' Dw2 U2 Bw' Uw2 Bw2 Fw2 Dw' Uw U' L Rw2 R2 Dw F Dw2 R' Dw R2 B Dw F2 U' Bw2 Dw L' Lw2 Rw Uw' Rw2 Rw' D' Uw2 Rw2 B Fw F' Uw' Bw2 Fw2 L Fw' Dw2 Dw Uw' F Dw' U Bw' Uw' Uw2 Lw' Fw2 Rw' D2 Rw Bw' U L Lw2 Lw' R' Uw2 R F' Rw R2 Bw Fw' Fw' F' Rw' Fw2 Rw Fw2 Rw2 Fw F2 Rw F2 Lw Bw' Bw2 U Bw Fw Rw D Bw2 Fw' D' Uw2 U Lw2 Bw2 Uw Rw2</p></div>
+			<button onclick="tg('thbld')">3x3 Blindfolded</button><div id="thbld">
+				<li>F' R B2 R2 F2 R2 D2 B2 R' B2 R' D2 U' F' L' U B F2 L U Rw2 Uw2</li>
+				<li>F' L2 U' F2 D' B2 D B2 R2 D2 F2 B U2 L D R' F U' R2 B2 Rw' Uw2</li>
+				<li>R' F2 L B2 L2 D2 U' L2 F2 R2 B2 U B R2 D' L2 D L2 F' Rw Uw</li>
+			</div>
+			<button onclick="tg('fmc')">Fewest Moves Challenge</button><div id="fmc">
 				<img src="fmc.jpg">
 				<ol>
-					<li>R' U' F R2 B' U B2 D R2 U' F2 L2 U B2 D2 L U' B' L R D2 B D R' U' F</li>
+					<li>R' U' F D' L2 B2 F2 U B2 U' R2 D2 B2 R2 L' D B' D2 L' F2 U2 L' U R' U' F</li>
 				 </ol>
-			 </div>
-			<button onclick="toggle('threeoh')">3x3 One-Handed</button>
-			<div id="threeoh">
-				<ol>
-					<li>B2 D2 F D2 R2 F' L2 F D2 F D2 U2 R' F U R2 F' D2 U B F'</li>
-					<li>B L2 F2 D2 L2 R2 B' U2 L2 F L2 F2 L F R2 D F U' B2 R F'</li>
-					<li>U2 R2 F2 U2 L2 R' F2 U2 B2 D2 R U2 D' B' R U2 B2 L' F2 R</li>
-					<li>D2 R2 B D2 B D2 L2 B F2 L2 R U R' D B' L' R' B D F2</li>
-					<li>D2 F2 L2 D2 L2 U2 F' D2 F D2 R2 B' R' D' B' R2 B' D2 R B2 R</li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('clock')">Clock</button>
-			<div id="clock">
-				<ol>
-					<li>UR2- DR5- DL2- UL2+ U1- R1+ D4+ L1- ALL5+ y2 U0+ R0+ D1- L2- ALL4- UR DR DL</li>
-					<li>UR1+ DR1+ DL0+ UL3+ U3+ R5+ D6+ L2- ALL2- y2 U4- R3+ D2+ L4- ALL6+ DR UL</li>
-					<li>UR1- DR2- DL6+ UL1- U2+ R5+ D4- L2+ ALL4- y2 U5- R4+ D1+ L5+ ALL5+ UL</li>
-					<li>UR3+ DR4+ DL3- UL5+ U2+ R4- D5+ L6+ ALL5+ y2 U0+ R5+ D0+ L1+ ALL4- DL UL</li>
-					<li>UR4+ DR2- DL1+ UL5- U1- R4- D4- L5- ALL5- y2 U5+ R1+ D1+ L4+ ALL0+ UR DL UL</li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('mega')">Megaminx</button>
-			<div id="mega">
-				<ol>
-					<li>  R++ D-- R++ D-- R-- D++ R++ D++ R++ D++ U <br>
-  						  R++ D-- R++ D++ R-- D++ R++ D++ R++ D++ U <br>
-  						  R-- D-- R++ D-- R++ D++ R-- D++ R-- D++ U <br>
-  						  R++ D-- R-- D-- R-- D++ R++ D-- R++ D-- U'<br>
-  						  R++ D++ R-- D++ R++ D-- R-- D++ R-- D-- U'<br>
-  						  R-- D++ R++ D++ R++ D-- R-- D-- R-- D-- U'<br>
-  						  R-- D-- R++ D-- R++ D-- R-- D-- R-- D++ U </li>
-					<li>  R++ D-- R++ D-- R++ D++ R-- D++ R++ D++ U <br>
-  						  R-- D++ R-- D++ R++ D-- R++ D-- R++ D++ U <br>
-  						  R-- D++ R-- D-- R++ D++ R-- D++ R-- D-- U'<br>
-  						  R++ D++ R-- D++ R++ D-- R++ D++ R++ D++ U <br>
-  						  R-- D++ R++ D++ R++ D-- R-- D++ R-- D-- U'<br>
-  						  R-- D-- R++ D++ R++ D++ R++ D-- R-- D++ U <br>
-  						  R++ D-- R-- D++ R++ D-- R-- D-- R-- D-- U'</li>
-					<li>  R++ D-- R-- D-- R++ D-- R++ D-- R++ D-- U'<br>
-  						  R-- D-- R++ D-- R++ D++ R++ D-- R++ D++ U <br>
-  						  R-- D-- R++ D-- R-- D++ R-- D++ R++ D-- U'<br>
-  						  R++ D-- R++ D-- R++ D++ R-- D-- R++ D-- U'<br>
-  						  R-- D-- R-- D-- R-- D++ R-- D-- R++ D-- U'<br>
-  						  R-- D++ R-- D++ R-- D++ R-- D-- R++ D-- U'<br>
-  						  R-- D-- R-- D++ R-- D-- R-- D++ R++ D++ U </li>
-					<li>  R-- D++ R++ D++ R++ D++ R-- D-- R-- D-- U'<br>
-  						  R-- D-- R++ D++ R-- D-- R-- D++ R-- D-- U'<br>
-  						  R++ D-- R-- D-- R++ D-- R++ D-- R++ D++ U <br>
-  						  R++ D-- R-- D++ R++ D++ R-- D++ R++ D-- U'<br>
-  						  R-- D-- R-- D-- R-- D++ R-- D-- R-- D++ U <br>
-  						  R++ D-- R++ D++ R++ D++ R++ D-- R++ D++ U <br>
-  						  R-- D++ R++ D++ R++ D-- R++ D++ R++ D-- U'</li>
-					<li>  R-- D++ R++ D-- R++ D++ R-- D++ R++ D++ U <br>
-  						  R++ D-- R-- D++ R-- D-- R-- D-- R++ D++ U <br>
-  						  R-- D-- R++ D-- R++ D++ R++ D-- R-- D++ U <br>
-  						  R-- D-- R++ D-- R++ D-- R++ D-- R++ D-- U'<br>
-  						  R-- D++ R++ D-- R-- D++ R-- D-- R++ D-- U'<br>
-  						  R-- D++ R++ D++ R++ D++ R++ D++ R-- D-- U'<br>
-  						  R++ D-- R++ D-- R++ D-- R-- D-- R-- D-- U'</li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('pyra')">Pyraminx</button>
-			<div id="pyra">
-				<ol>
-					<li>R' B U' R' U' B R' L' l r u</li>
-					<li>U' R U' B' U B' L R' l r' b u'</li>
-					<li>U' L B' R L' B R B r' b'</li>
-					<li>R' U R' B' L' B R' U' r' b'</li>
-					<li>U L' U' B' L R' B L' r' b u'</li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('skewb')">Skewb</button>
-			<div id="skewb">
-				<ol>
-					<li>L' R B L U L' B U'</li>
-					<li>L' U' B' U' B L B' L'</li>
-					<li>L R' B' R' L' U R B' U'</li>
-					<li>L U R B U' L B' L'</li>
-					<li>R L' B R L' B R' L' B</li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('squan')">Square-1</button>
-			<div id="squan">
-				<ol>
-					<li>(0,5)/ (4,4)/ (-3,-3)/ (3,0)/ (3,0)/ (6,-1)/ (0,-3)/ (0,-2)/ (0,-1)/ (-4,-1)/ (6,-5)/ (3,-2)</li>
-					<li>(0,-1)/ (6,0)/ (0,-3)/ (-5,-2)/ (-3,0)/ (2,-1)/ (4,-3)/ (-3,-3)/ (-5,0)/ (-2,-2)/ (0,-2)/ (-4,0)/ (0,-4)/</li>
-					<li>(-5,0)/ (-1,5)/ (3,0)/ (-2,-5)/ (5,-4)/ (3,0)/ (-5,0)/ (-3,0)/ (3,-3)/ (5,0)/ (-2,0)/ (3,0)</li>
-					<li>(1,-3)/ (2,-1)/ (-3,0)/ (-2,-5)/ (6,-3)/ (0,-4)/ (-3,0)/ (-1,-2)/ (4,0)/ (-2,0)/ (2,-3)/ (-4,0)/</li>
-					<li>(0,5)/ (-3,0)/ (6,-3)/ (-5,-2)/ (0,-3)/ (6,0)/ (0,-1)/ (0,-3)/ (0,-3)/ (3,-5)/ (0,-1)/ (2,0)/ (4,0)/ (-2,0)/</li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('redi')">Redi Cube</button>
-			<div id="redi">
-				<ol>
-					<li>R L' R x R L' R' L x L' R L' R L' x L' R' L' x L' R L' x L' R L' R L' x R' L' R L x R L R L R</li>
-					<li>R L R' L x R L' R L' x L R' L x R L' R x R' L' R L x R L R' x R' L' R L x L' R' L' R</li>
-					<li>R L R x R' L R L x R' L' R' L x R' L' R L R x L' R L R x R' L' R L R x L' R L' x R' L R L' R</li>
-					<li>L' R' L' R L' x R L' R L x R' L' R L x L' R L x R L' R' x L' R L' R x R L' R L' x R' L' R</li>
-					<li>R L' R' x R L' R' x L' R L' R x L R L' x R L' R L x L' R L' x R' L R' x R L R L' R'</li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('twobld')">2x2 Blindfolded</button>
-			<div id="twobld">
-				<ol>
-					<li>F2 U' F U' F U2 F' R F'</li>
-					<li>U2 F R' F R U' F R' U</li>
-					<li>U R' F2 R2 U2 R' F2 R U'</li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('twotwothree')">2x2x3 Cuboid</button>
-			<div id="twotwothree">
-				<ol>
-					<li>R2 U' R2 U' D2 R2 U2</li>
-					<li>R2 U' R2 U' D2 R2 U2</li>
-					<li>U' R2 F2 U  F2 D' F2 D  R2 U</li>
-					<li>R2 F2 U  R2 U2 F2 D' R2 U2 F2 U  F2</li>
-					<li>R2 F2 U  R2 U' F2 D' R2 U2 R2</li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('mirror')">Mirror Blocks</button>
-			<div id="mirror">
-				<ol>
-					<li>F' D' B2 L2 D' B2 U F2 U L2 U R2 U' R D' B U2 L2 D B2</li>
-					<li>D2 R' B' L2 D' R2 B2 L2 D2 B2 U L2 F2 R' B D2 L U' L'</li>
-					<li>B2 R2 U2 F2 R2 F2 R2 D F2 U R2 B' R' D' R U' L' F2 D2 B R</li>
-					<li>F' D L2 D2 R B R2 D' L' F2 L2 D2 B2 D2 F2 L D2 R B2 U2</li>
-					<li>R' F2 U' F' U D B U' B2 D2 B2 D2 L' U2 L' D2 L2 F2 L' U2</li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('kilo')">Kilominx</button>
-			<div id="kilo">
-				<ol>
-					<li>  R++ D++ R++ D-- R-- D++ R-- D-- R-- D++ U <br>
-  						  R++ D++ R++ D++ R++ D++ R-- D-- R++ D-- U'<br>
-  						  R-- D-- R-- D++ R-- D-- R++ D++ R-- D++ U <br>
-  						  R-- D-- R-- D-- R++ D-- R-- D-- R-- D++ U <br>
-  						  R++ D++ R-- D++ R++ D-- R-- D++ R-- D-- U'<br>
-  						  R++ D-- R++ D++ R-- D-- R++ D++ R++ D++ U <br>
-  						  R-- D-- R-- D-- R++ D++ R-- D-- R++ D-- U'</li>
-					<li>  R-- D-- R-- D-- R-- D++ R++ D-- R++ D++ U <br>
-  						  R-- D-- R++ D++ R++ D-- R-- D-- R-- D-- U'<br>
-  						  R-- D++ R++ D++ R-- D++ R++ D-- R-- D++ U <br>
-  						  R++ D-- R++ D-- R++ D++ R-- D-- R-- D-- U'<br>
-  						  R-- D-- R-- D-- R-- D++ R++ D-- R-- D++ U <br>
-  						  R-- D++ R-- D++ R-- D++ R++ D-- R-- D-- U'<br>
-  						  R-- D-- R++ D++ R-- D++ R++ D-- R-- D-- U'</li>
-					<li>  R++ D-- R++ D-- R++ D-- R-- D-- R-- D++ U <br>
-  						  R++ D-- R++ D++ R-- D++ R++ D++ R-- D++ U <br>
-  						  R++ D-- R++ D++ R-- D-- R-- D++ R-- D-- U'<br>
-  						  R++ D++ R++ D-- R++ D-- R-- D-- R++ D-- U'<br>
-  						  R-- D-- R++ D-- R++ D++ R-- D++ R-- D++ U <br>
-  						  R-- D++ R++ D++ R++ D++ R++ D++ R++ D-- U'<br>
-  						  R++ D++ R++ D++ R-- D++ R-- D-- R-- D++ U </li>
-					<li>  R-- D-- R++ D-- R++ D-- R-- D++ R++ D++ U <br>
-  						  R-- D-- R-- D++ R-- D++ R++ D-- R++ D++ U <br>
-  						  R-- D++ R-- D-- R++ D++ R-- D++ R++ D++ U <br>
-  						  R++ D-- R-- D++ R-- D-- R-- D-- R++ D-- U'<br>
-  						  R-- D++ R-- D-- R-- D-- R-- D++ R-- D-- U'<br>
-  						  R-- D++ R++ D-- R++ D-- R-- D-- R++ D-- U'<br>
-  						  R++ D++ R-- D-- R-- D++ R-- D++ R-- D++ U </li>
-					<li>  R++ D++ R++ D++ R-- D++ R++ D-- R-- D++ U <br>
-  						  R-- D++ R++ D++ R++ D-- R-- D++ R++ D++ U <br>
-  						  R++ D++ R++ D-- R++ D++ R++ D-- R++ D-- U'<br>
-  						  R-- D-- R-- D-- R++ D-- R++ D-- R++ D++ U <br>
-  						  R-- D-- R-- D-- R++ D++ R++ D-- R-- D++ U <br>
-  						  R++ D++ R-- D-- R-- D++ R-- D++ R++ D++ U <br>
-  						  R++ D++ R++ D-- R-- D++ R-- D-- R++ D++ U </li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('fifteen')">Fifteen Puzzle</button>
-			<div id="fifteen">
-				<ol>
-					<li>D R2 U L2 D R2 D L U L D R U R D L U2 D2 L D R U L U R D2 R U2 L U R D R D2 L2 U2 R2 U L D2 R U L D2 L2 U2 R3 D2 L2 U3</li>
-					<li>D R2 D L U2 R D2 L2 U R U L D D R D L U2 R D2 R U L2 U2 R R D R D L U2 R D2 L U2 L D R D2 R U2</li>
-					<li>R D L D R U2 L D R2 U L D2 R U L D R U2 L D2 R D L2 U R2 U L D2 R U L2 U2 R D R D2 L2 U3 R2 D R D L D R U L2 D R2 U L3 D R2 U3 R D3 L U3</li>
-					<li>D2 R U2 R D L2 U R2 D L2 D R2 U L D R U2 R D L U L D2 R U D L D R2 U2 L2 D L D R3 U3 L2 D3 L U R3 D L</li>
-					<li>D2 R2 U2 L2 D2 R U L D R2 U2 L D2 L U R2 U L2 D2 R2 D L2 U R2 U L D2 L U3 R R D2 R U2 L2 D2 R2 U L2 D2 R U L2 U</li>
-				 </ol>
-			 </div>
-			<button onclick="toggle('twotofour')">2x2-4x4 Relay</button>
-			<div id="twotofour">
-				<ul>
-					<li>2x2: U' R2 F R' U F2 R' F' R2</li>
-					<li>3x3: F2 D R B U' L2 B' R' L2 F R2 U2 L2 B2 U2 F' L2 F' L2</li>
-					<li>4x4: F' U2 F D2 B' U2 B2 U2 L2 B' D2 B U L B' D B' F' R' U' F2 Rw2 F' Uw2 F' U F' B Rw2 F' D B2 U2 Fw2 Rw U' Rw' U2 F2 L2 Uw' B' Rw Fw U Fw'</li>
-				 </ul>
-			 </div>
-		 </div>
-		<script>
-			function toggle(n){
-				var toggleType = n;
-				if(document.getElementById(toggleType).style.display == "block")document.getElementById(toggleType).style.display = "none";
-				else{document.getElementById(toggleType).style.display = "block"}
-			}
-		 </script>
-	</body>
-</html>
+			</div>
+			<button onclick="tg('throh')">3x3 One-Handed</button><div id="throh"><p>B U B L R D B2 F2 D B2 L F' U B' L2 F' L2 D L2</p><p>B F' R2 B' F2 L F' R2 F' L' U' R D2 B D' B2 R2 D' R2</p><p>B2 L2 U2 L R' F' R' F' D2 U2 L B' D2 U R' D U' F2 U2</p><p>U' R' D2 B2 U F D2 B D' L2 F' D L2 R' B F' D2 R D</p><p>B2 D2 F D2 B' F' R F2 L2 B' F U' F U L2 U B L2 B2</p></div>
+			<button onclick="tg('clk')">Clock</button><div id="clk">
+				<li>UR3- DR3- DL1+ UL3- U4+ R3+ D1+ L0+ ALL5+ y2 U3- R5- D5+ L1+ ALL0+ UR DL</li>
+				<li>UR2- DR1- DL3- UL5+ U4+ R6+ D0+ L6+ ALL2+ y2 U3+ R4- D3- L2+ ALL1+ UR DR</li>
+				<li>UR1- DR6+ DL0+ UL3- U4- R5- D0+ L3+ ALL4+ y2 U5- R1- D1+ L5+ ALL2- DL</li>
+				<li>UR3+ DR3+ DL5+ UL0+ U1+ R1- D1- L6+ ALL1+ y2 U3- R2+ D4- L1- ALL6+ UR UL</li>
+				<li>UR6+ DR2- DL1+ UL5+ U6+ R1+ D2- L4- ALL5- y2 U3+ R1+ D1- L1- ALL0+ UR UL</li>
+			</div>
+			<button onclick="tg('mega')">Megaminx</button><div id="mega">
+				<li>  R++ D++ R++ D++ R-- D-- R-- D-- R++ D-- U'<br>
+  					  R++ D++ R-- D++ R++ D-- R-- D-- R-- D-- U'<br>
+  					  R++ D++ R-- D-- R++ D++ R++ D-- R-- D-- U'<br>
+  					  R++ D++ R++ D++ R-- D++ R++ D++ R-- D-- U'<br>
+  					  R-- D-- R++ D++ R-- D++ R++ D-- R++ D++ U <br>
+  					  R++ D-- R-- D-- R++ D-- R++ D-- R-- D++ U <br>
+  					  R++ D-- R-- D-- R++ D++ R-- D-- R++ D-- U'</li>
+				<li>  R-- D++ R++ D++ R-- D-- R++ D++ R-- D++ U <br>
+  					  R-- D++ R++ D-- R++ D++ R++ D-- R++ D++ U <br>
+  					  R-- D++ R++ D-- R-- D-- R++ D++ R-- D-- U'<br>
+  					  R++ D-- R++ D-- R++ D-- R++ D++ R-- D++ U <br>
+  					  R++ D-- R++ D-- R++ D++ R-- D++ R++ D++ U <br>
+  					  R++ D-- R++ D-- R-- D-- R++ D++ R-- D++ U <br>
+  					  R++ D++ R++ D-- R-- D++ R++ D-- R-- D++ U </li>
+				<li>  R++ D++ R++ D-- R-- D++ R-- D++ R++ D-- U'<br>
+  					  R++ D++ R++ D-- R-- D++ R++ D++ R++ D++ U <br>
+  					  R++ D++ R++ D-- R++ D++ R-- D++ R-- D++ U <br>
+  					  R-- D-- R++ D++ R++ D-- R-- D++ R-- D++ U <br>
+  					  R++ D++ R++ D++ R++ D-- R++ D-- R++ D++ U <br>
+  					  R-- D-- R++ D-- R-- D-- R++ D++ R-- D++ U <br>
+  					  R++ D-- R-- D++ R++ D-- R++ D++ R-- D++ U </li>
+				<li>  R-- D-- R-- D-- R-- D++ R-- D++ R++ D-- U'<br>
+  					  R++ D-- R-- D++ R++ D-- R-- D++ R++ D++ U <br>
+  					  R++ D++ R-- D-- R++ D++ R++ D-- R++ D-- U'<br>
+  					  R++ D++ R-- D++ R-- D++ R++ D-- R++ D++ U <br>
+  					  R-- D++ R++ D-- R++ D++ R-- D++ R-- D++ U <br>
+  					  R-- D++ R++ D-- R++ D++ R-- D-- R-- D-- U'<br>
+  					  R-- D-- R-- D-- R++ D-- R-- D++ R++ D++ U </li>
+				<li>  R++ D-- R-- D-- R-- D-- R-- D++ R-- D-- U'<br>
+  					  R-- D-- R++ D-- R++ D++ R-- D++ R-- D++ U <br>
+  					  R-- D-- R-- D++ R-- D++ R-- D-- R++ D-- U'<br>
+  					  R-- D++ R-- D++ R++ D++ R++ D++ R++ D-- U'<br>
+  					  R++ D-- R-- D++ R++ D++ R-- D++ R-- D++ U <br>
+  					  R++ D-- R++ D-- R++ D-- R++ D++ R-- D++ U <br>
+  					  R++ D-- R-- D-- R++ D++ R-- D++ R++ D-- U'</li>
+			</div>
+			<button onclick="tg('pyra')">Pyraminx</button><div id="pyra"><p>b u L' B' U' R L' U B' U' B' R L' R' L R' L B' U B' </p><p>r b L' R' L' B R U B' R' U R' B' R' U' R' U B' L' U </p><p>l r' b U R U R' L' R' U' B' R' B' L U' R' B' R B U </p><p>l r u L' R B R L' B R L' R U' R B L' R B' U' L </p><p>u B U' L R' B R' U' R' U R L U' B U B' L U B' L' </p></div>
+			<button onclick="tg('skewb')">Skewb</button><div id="skewb"><p>L F' L' F' B R B F' </p><p>L' R' B' L F' L' B' F </p><p>F L R' F' R F L' F </p><p>B' F L F L R' F' L </p><p>F' B' R F' B' R' B L' </p></div>
+			<button onclick="tg('squan')">Square-1</button><div id="squan"><p>(0,-4)  (-2,6)  (3,0)  (2,0)  (1,1)  (0,2)  (0,3)  (0,3)  (6,2)  (0,1)  (6,2)  (-4,3)  (6,4)  (-3,4)  (-2,0)  (0,2)  (2,0)</p><p>(0,-3)  (0,3)  (6,0)  (0,4)  (5,5)  (3,0)  (-2,1)  (-1,3)  (3,3)  (-3,4)  (6,0)  (0,2)  (0,3)  (-1,0)  (1,4)  (0,3)  (2,5)</p><p>(6,-3)  (0,-3)  (0,5)  (-2,3)  (6,3)  (6,2)  (0,4)  (3,0)  (0,3)  (5,3)  (6,2)  (0,4)  (3,0)  (0,4)  (0,2)  (0,3)  (6,0)  </p><p>(1,0)  (-4,0)  (-3,3)  (3,0)  (3,0)  (-3,4)  (6,0)  (6,2)  (6,2)  (0,1)  (-2,3)  (1,0)  (-4,3)  (-4,0)  (0,3)  (1,3)  (0,4)</p><p>(6,-3)  (3,0)  (1,2)  (-4,3)  (6,5)  (-2,0)  (0,3)  (4,2)  (0,4)  (0,4)  (0,2)  (1,0)  (4,2)  (-2,2)  (6,2)  (0,4)  </p></div>
+			<button onclick="tg('redi')">Redi Cube</button><div id="redi">
+				<li>L' R' L' x R L' R L x L R L R x L' R L x R' L R' x R L R L R' x R' L' R L x L R L'</li>
+				<li>L R' L R L x R' L' R x L R L x L' R' L x R L' R' x L R' L' R L' x R' L R' L' R x L' R' L R' L'</li>
+				<li>L' R L R' L' x L R L' R x L' R L x R L' R' L' x L R L' x L R L R' L x R L R L' R x R' L' R</li>
+				<li>R' L' R' L' x L R L R x L R L R' L x L R' L' R x L R' L R' L' x L R' L' R' x R' L R x L' R L' R</li>
+				<li>L R L' R L x R L R x L R' L R x L' R L' R' x L R' L' x R' L R' L R' x L' R' L R x R L' R' L R'</li>
+			</div>
+			<button onclick="tg('twbld')">2x2 Blindfolded</button><div id="twbld"><p>F' U2 F' R' U F R' U</p><p>F' R2 F2 U' F' R2 F' U'</p><p>F2 U R F2 U F U' R2</p></div>
+			<button onclick="tg('tower')">2x2x3 Cuboid</button><div id="tower">
+				<li>D' F2 D' R2 D  R2 U2 F2</li>
+				<li>R2 U  R2 D2 F2 U' R2 U2 F2 U' R2 U  R2</li>
+				<li>F2 U2 R2 U' R2 U' R2 U  F2</li>
+				<li>R2 D  R2 F2 D  R2 U  F2</li>
+				<li>R2 D' R2 D  F2 U' F2 D  F2 D  R2</li>
+			</div>
+			<button onclick="tg('mir')">Mirror Blocks</button><div id="mir"><p>B' L2 U' R D' L2 B' L2 B' L U2 B2 F2 D U' L2 F' L D2</p><p>U F2 R' U' L' F' L R2 D R D' R' B' D' L2 U2 L2 B D'</p><p>B D L2 B L' R B F2 R B' L' F R D L R' B R B'</p><p>L' R2 B2 L R2 B F L2 R' F2 L' R' B' U L F2 L' U' B2</p><p>D' F2 L D U' B U' L' D U' F2 L' R' D' U R2 F' L D'</p></div>
+			<button onclick="tg('kilo')">Kilominx</button><div id="kilo">
+				<li>  R++ D-- R++ D-- R-- D-- R++ D-- R++ D-- U'<br>
+  					  R-- D-- R-- D-- R-- D-- R-- D++ R-- D++ U <br>
+  					  R++ D++ R-- D++ R-- D++ R++ D-- R-- D-- U'<br>
+  					  R-- D-- R-- D-- R-- D-- R-- D++ R-- D-- U'<br>
+  					  R++ D-- R++ D-- R-- D++ R-- D++ R-- D++ U <br>
+  					  R++ D-- R-- D-- R++ D-- R-- D-- R++ D++ U <br>
+  					  R-- D-- R-- D-- R++ D++ R-- D++ R-- D++ U </li>
+				<li>  R-- D++ R-- D-- R++ D-- R++ D++ R-- D-- U'<br>
+  					  R++ D++ R++ D-- R-- D-- R++ D-- R-- D++ U <br>
+  					  R++ D++ R-- D-- R-- D-- R-- D-- R-- D++ U <br>
+  					  R++ D-- R-- D-- R-- D-- R-- D-- R-- D-- U'<br>
+  					  R++ D-- R++ D-- R-- D++ R++ D++ R-- D-- U'<br>
+  					  R++ D++ R++ D++ R++ D++ R++ D++ R++ D-- U'<br>
+  					  R-- D-- R-- D-- R-- D++ R++ D++ R++ D++ U </li>
+				<li>  R-- D-- R-- D++ R++ D++ R-- D++ R-- D-- U'<br>
+                      R-- D++ R-- D-- R-- D++ R++ D++ R-- D++ U <br>
+                      R-- D++ R-- D++ R-- D++ R++ D-- R-- D++ U <br>
+                      R-- D++ R++ D-- R++ D-- R-- D-- R-- D-- U'<br>
+                      R-- D-- R-- D++ R++ D-- R++ D-- R++ D-- U'<br>
+                      R++ D-- R-- D++ R++ D-- R++ D++ R++ D-- U'<br>
+                      R-- D-- R++ D++ R-- D++ R++ D++ R-- D-- U'</li>
+				<li>  R-- D-- R++ D-- R-- D++ R-- D++ R++ D++ U <br>
+                      R-- D-- R++ D++ R-- D-- R-- D-- R-- D++ U <br>
+                      R-- D-- R++ D-- R-- D++ R++ D++ R-- D++ U <br>
+                      R-- D-- R++ D++ R-- D-- R++ D-- R++ D++ U <br>
+                      R-- D++ R-- D++ R++ D-- R++ D-- R-- D-- U'<br>
+                      R++ D-- R-- D-- R++ D-- R-- D++ R++ D-- U'<br>
+                      R-- D++ R++ D-- R-- D-- R-- D-- R-- D-- U'</li>
+				<li>  R++ D++ R-- D-- R-- D++ R-- D++ R-- D++ U <br>
+  					  R++ D-- R-- D-- R++ D++ R++ D-- R++ D-- U'<br>
+  					  R++ D-- R++ D++ R++ D++ R-- D++ R++ D++ U <br>
+  					  R-- D-- R++ D++ R-- D-- R++ D-- R++ D-- U'<br>
+  					  R++ D++ R++ D-- R-- D-- R-- D-- R++ D-- U'<br>
+  					  R++ D-- R-- D-- R-- D-- R-- D-- R++ D++ U <br>
+  					  R-- D-- R-- D-- R++ D++ R++ D++ R-- D++ U </li>
+			</div>
+			<button onclick="tg('fiftn')">Fifteen Puzzle</button><div id="fiftn">
+				<li>D2 R2 U L D R U2 L D2 R U R U L2 D R2 D L2 U R2 D L U2 L D2 R D R U2 L2 D2 L U R D R U2 L2 D D R3</li>
+				<li>R D2 L U2 R D R D L2 U2 R D2 L U2 R2 D2 L2 R2 U2 R D2 L U2 R D2 L U2 L D2 R2 U L3 D R D R2 U L2 U R D2 L U3 R D3 L2 U3 R2 D2 R D U2 L</li>
+				<li>D R2 D L2 U2 R2 D2 L U2 R D2 L U2 R D D L2 D R U L U R2 D L U R D2 L U3 R D2 L R U2 R D L U L D3 R U2 L D R2 U L3 D R2 U2 R D L D</li>
+				<li>R2 D L2 D R U L U R D R D L2 R2 U2 R D L2 U R D2 L2 U2 R3 D2 L D L2 U R2 D R U2 L D2 R U2 L U R D3 L2</li>
+				<li>D2 R U R U L2 D R2 U L2 D2 R U2 L D2 R2 D L U2 R D2 L2 R2 U R U L D R D L2 U R U2 R D3 L2 U3 R2 D3 L2 U</li>
+			</div>
+			<button onclick="tg('twthf')">2x2-4x4 Relay</button><div id="twthf"><div id="rtwo"><p>R2 F R' U R F U' R</p></div><div id="rthree"><p>R2 D' U2 L' B' F2 D2 R B' U2 B R F' L2 U' F R D' F'</p></div><div id="rfour"><p>B' Fw2 Uw2 Rw2 B' Fw F2 Rw' U2 L R' Uw2 Rw2 Fw2 L Rw' B2 F' D2 Uw Rw2 B' Fw F2 Uw B' Uw U2 L' Fw Uw Rw2 F' Uw2 L R Fw' D Fw2 Rw B' Fw2 F2 L</p></div></div></div><script>function tg(a){var b=a;document.getElementById(b).style.display="block"==document.getElementById(b).style.display?"none":"block"}</script></body></html>
